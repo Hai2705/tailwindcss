@@ -1,3 +1,44 @@
+ @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.ch-menu-nav{
+  @apply absolute top-3/4	bg-white z-50 bg-center text-center w-full right-0 transition-all duration-300 ease-in-out delay-500 h-64 animate-navBar xl:hidden
+}
+.ch-top-menu-item {
+  @apply hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:bg-light-coffee
+     after:w-0 after:h-0.5 lg:hover:after:w-full
+                             lg:after:transition-all after:duration-300 after:ease-in-out
+                             py-1 lg:text-sm text-lg
+}
+.ch-icons{
+    @apply w-5 h-5 inline-block
+}
+.ch-badge-icons{
+  @apply text-white font-normal bg-ch-orange ch-icons text-center border rounded-full
+  text-xs
+}
+.ch-line{
+  @apply inline-block w-8 h-px bg-gray-200 my-2 mx-3
+}
+.ch-line-gray{
+  @apply inline-block w-8 h-px bg-gray-600 mt-8 mx-3 font-semibold 
+}
+.ch-on-sale{
+  @apply w-[90px] h-[40px] text-base text-light-coffee font-semibold bg-slate-50 text-center pt-1.5 absolute top-2 right-2
+}
+.ch-new-cost{
+  @apply text-xl text-light-coffee font-black
+}
+.ch-old-cost{
+  @apply text-base text-gray-400 mt-2 ml-3 line-through
+}
+.ch-explore-mug{
+  @apply absolute bottom-4 text-center bg-white left-4 right-4 h-[50px] px-40 py-3 tracking-widest
+} 
+.ch-explore-mug-mini{
+  @apply absolute bottom-4 text-center bg-white left-2 right-2 h-[40px] px-20 py-1.5 tracking-widest
+}
+.ch-explore-story-mini{
+  @apply absolute bottom-4 text-center bg-white left-2 right-2 h-[40px] px-10 py-1.5 tracking-widest
+}
